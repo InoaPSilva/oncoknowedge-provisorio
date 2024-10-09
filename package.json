@@ -1,5 +1,5 @@
 {
-  "name": "oncoknowedge",
+  "name": "my-angular-project",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:oncoknowedge": "node dist/oncoknowedge/server/server.mjs"
+    "serve:ssr:my-angular-project": "node dist/my-angular-project/server/server.mjs"
   },
   "private": true,
   "dependencies": {
