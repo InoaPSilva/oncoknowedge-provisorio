@@ -10,7 +10,7 @@ export class AuthFormComponent implements OnInit {
 
   @Input() formFields: string[] = [];
   @Input() redirectMessage: string = '';
-  @Input() buttonMessages: string = '';
+  @Input() buttonMessage: string = '';
   @Output() formResult = new EventEmitter<string>()
 
   form: FormGroup = this.formBuilder.group({});

@@ -1,0 +1,87 @@
+.title {
+    padding: 0% 0 6% 0;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+    /* Light gray for the background */
+}
+
+.login-box {
+    background-color: #fff;
+    padding: 40px;
+    /* Increased padding for more height */
+    border-radius: 8px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    /* Shadow with 25% opacity */
+    text-align: center;
+    width: 400px;
+    border: 1px solid #F0ECEC;
+    /* Border with stroke color */
+}
+
+.login-box h2 {
+    margin-bottom: 30px;
+    /* Increased margin for more distance from the form */
+    font-size: 24px;
+    font-weight: normal;
+    color: #444444;
+    /* Text color */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 75%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #F0EFEF;
+    /* Background color for input */
+    border: 1px solid #F0ECEC;
+    /* Stroke color for input */
+    border-radius: 4px;
+    color: #444444;
+    /* Text color */
+}
+
+.btn-primary {
+    background-color: #4684E1;
+    /* Button color */
+    color: white;
+    /* Button text color */
+    padding: 10px;
+    width: 70%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #3978C7;
+    /* Darker shade for hover effect */
+}
+
+.redirect-message {
+    margin-top: 10px;
+    color: red;
+    font-size: 14px;
+}
+
+.register-message {
+    text-align: start;
+    font-size: 12px;
+    margin: 3% 17% 10% 17%;
+
+}
+
+.register-message a {
+    color: #4684E1;
+    /* Link color */
+    text-decoration: none;
+}

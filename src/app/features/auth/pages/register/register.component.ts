@@ -12,4 +12,8 @@ export class RegisterComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  func(event: any) {
+    console.log("event no login: " + JSON.stringify(event));
+
+  }
 }

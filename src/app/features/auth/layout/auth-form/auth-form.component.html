@@ -1,13 +1,22 @@
-<form [formGroup]="form" (ngSubmit)="onSubmit()">
-    <!-- Loop through formFields and dynamically create input fields -->
-    <div *ngFor="let field of formFields">
-        <label [for]="field">{{ field | titlecase }}</label>
-        <input [formControlName]="field" [id]="field" type="text" class="form-control" />
+<div class="login-container">
+    <div class="login-box">
+        <h2 class="title">OncoKnowledge</h2>
+
+        <!-- Angular form group -->
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+            <!-- Loop through formFields and dynamically create input fields -->
+            <div *ngFor="let field of formFields" class="form-group">
+                <input [formControlName]="field" [id]="field" [type]="field === 'password' ? 'password' : 'text'"
+                    [placeholder]="field | titlecase" class="form-control" />
+            </div>
+
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary">{{ buttonMessage }}</button>
+
+            <!-- Register or Forgot password link -->
+            <p class="register-message">
+                {{ redirectMessage }}
+            </p>
+        </form>
     </div>
-
-    <!-- Submit button -->
-    <button type="submit" class="btn btn-primary">{{ buttonMessage }}</button>
-
-    <!-- Optional redirect message or status -->
-    <p>{{ redirecMessage }}</p>
-</form>
+</div>

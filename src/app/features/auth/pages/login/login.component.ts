@@ -11,5 +11,9 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  func(event: any) { }
+  
+  func(event: any) {
+    console.log("event no login: " + JSON.stringify(event));
+    
+   }
 }
