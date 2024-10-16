@@ -1,1 +1,12 @@
-<p>wiki works!</p>
+<section class="body-section">
+  <section>
+    <app-wiki-box title="aaa" field="body"></app-wiki-box>
+  </section>
+
+  <section class="message-container">
+    <app-message-box [messages]="messages"></app-message-box>
+    <div class="message-input">
+      <app-message-sender (messageSent)="handleMessageSent($event)"></app-message-sender>
+    </div>
+  </section>
+</section>

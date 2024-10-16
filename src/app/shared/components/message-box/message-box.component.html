@@ -1,1 +1,6 @@
-<p>message-box works!</p>
+<!-- Message Box Section -->
+    <div class="message-box" id="messageBox">
+        <div *ngFor="let message of messages" [ngClass]="message.type">
+            {{ message.text }}
+        </div>
+    </div>

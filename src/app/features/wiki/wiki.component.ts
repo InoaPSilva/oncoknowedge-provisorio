@@ -5,11 +5,15 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './wiki.component.html',
   styleUrls: ['./wiki.component.css']
 })
-export class WikiComponent implements OnInit {
+export class WikiComponent {
+  messages: { text: string, type: string }[] = [];
 
-  constructor() { }
+  handleMessageSent(message: any) {
+    this.messages.push({ text: message, type: 'question' });
 
-  ngOnInit(): void {
+    // Simulate response
+    setTimeout(() => {
+      this.messages.push({ text: 'Simulated response...', type: 'message' });
+    }, 1000);
   }
-
 }
