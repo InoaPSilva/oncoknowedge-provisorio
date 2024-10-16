@@ -6,17 +6,17 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   styleUrls: ['./message-sender.component.css']
 })
 export class MessageSenderComponent {
-  newMessage: string = '';
-  @Input() context: any;
-  @Output() messageSent = new EventEmitter<any>();
+  newMessage: string = ''; // Holds the current message text
+  @Input() context: any; // Context data passed into the component
+  @Output() messageSent = new EventEmitter<any>(); // Emit event when message is sent
 
   sendMessage() {
     if (this.newMessage.trim() !== '') {
-
-
-      this.messageSent.emit(this.newMessage); // Emitting the message event
-      this.newMessage = ''; // Clear the input field
+      // Emit the message, could also emit context if necessary
+      this.messageSent.emit(this.newMessage);
+      this.newMessage = ''; // Clear the message input after sending
     }
+ 
   }
 
 }

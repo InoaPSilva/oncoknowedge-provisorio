@@ -1,5 +1,6 @@
 <span class="context-text" title="{{context}}">{{context}}</span>
 <div class="input-container">
-    <input type="text" [(ngModel)]="newMessage" placeholder="Mensagem Oncoknowledge" (keyup.enter)="sendMessage()" />
+    <textarea type="text" [(ngModel)]="newMessage" placeholder="Mensagem Oncoknowledge"
+        (keyup.enter)="sendMessage()"></textarea>
     <button (click)="sendMessage()">Enviar</button>
 </div>
