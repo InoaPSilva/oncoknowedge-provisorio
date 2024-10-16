@@ -1,25 +1,213 @@
+/* Title Style */
+.title {
+  padding: 0% 0 6% 0;
+}
+
+/* Login Container Style */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f2f2f2;
+  /* Light gray for the background */
+}
+
+/* Login Box Style */
+.login-box {
+  background-color: #fff;
+  padding: 40px;
+  /* Increased padding for more height */
+  border-radius: 8px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  /* Shadow with 25% opacity */
+  text-align: center;
+  width: 400px;
+  border: 1px solid #F0ECEC;
+  /* Border with stroke color */
+}
+
+/* Heading Style */
+.login-box h2 {
+  margin-bottom: 30px;
+  /* Increased margin for more distance from the form */
+  font-size: 24px;
+  font-weight: normal;
+  color: #444444;
+  /* Text color */
+}
+
+/* Form Group Style */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Input Control Style */
+.form-control {
+  flex: 1;
+  /* Allow the input to grow */
+  padding: 12px;
+  /* Increased padding for better touch area */
+  font-size: 18px;
+  /* Increased font size for better readability */
+  background-color: #F0EFEF;
+  /* Background color for input */
+  border: 1px solid #ccc;
+  /* Consistent border color */
+  border-radius: 5px;
+  /* Rounded corners */
+  color: #444444;
+  /* Text color */
+  width: 100%;
+  /* Set width to 100% to fill the container */
+}
+
+/* Button Style */
+.btn-primary {
+  background-color: #4684E1;
+  /* Button color */
+  color: white;
+  /* Button text color */
+  padding: 17px;
+  /* Increased padding for better click area */
+  width: 70%;
+  /* Button width */
+  border: none;
+  border-radius: 4px;
+  /* Slightly rounded corners */
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #3978C7;
+  /* Darker shade for hover effect */
+}
+
+/* Redirect and Register Message Styles */
+.redirect-message {
+  margin-top: 10px;
+  color: red;
+  font-size: 14px;
+}
+
+.register-message {
+  text-align: start;
+  font-size: 12px;
+  margin: 3% 17% 10% 17%;
+}
+
+/* Register Link Style */
+.register-message a {
+  color: #4684E1;
+  /* Link color */
+  text-decoration: none;
+}
+
+/* Input Container Style */
 .input-container {
-    display: flex;
-    align-items: center;
-  }
-  
-  input[type="text"] {
-    flex: 1;
-    padding: 8px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-  }
-  
-  button {
-    padding: 8px 12px;
-    margin-left: 5px;
-    border-radius: 5px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
-  
+  display: flex;
+  align-items: center;
+  /* Center vertically */
+  margin-top: 10px;
+  /* Space above input */
+}
+
+/* Input Text Style */
+input[type="text"] {
+  flex: 1;
+  /* Allow the input to grow */
+  padding: 12px;
+  /* Increased padding for better touch area */
+  border-radius: 5px;
+  /* Rounded corners */
+  border: 1px solid #ccc;
+  /* Consistent border color */
+  font-size: 18px;
+  /* Increased font size for better readability */
+  width: 100%;
+  /* Set width to 100% to fill the container */
+}
+
+
+/* Button Style */
+button {
+  padding: 8px 12px;
+  /* Padding for button */
+  margin-left: 5px;
+  /* Space between input and button */
+  border-radius: 5px;
+  /* Rounded corners */
+  background-color: #007bff;
+  /* Button color */
+  color: white;
+  /* Button text color */
+  border: none;
+  /* No border */
+}
+
+button:hover {
+  background-color: #0056b3;
+  /* Darker shade for hover effect */
+}
+
+/* Context Text Style */
+.context-text {
+  display: block;
+  /* Block display for proper height */
+  max-height: 4.5em;
+  /* Limit height for overflow */
+  overflow: hidden;
+  /* Hide overflow content */
+  text-overflow: ellipsis;
+  /* Use ellipsis for overflow text */
+  white-space: normal;
+  /* Allow normal wrapping */
+  font-size: 14px;
+  /* Font size */
+  line-height: 1.5;
+  /* Line height for spacing */
+}
+
+/* Input Control Style */
+.form-control {
+  flex: 1;
+  /* Allow the input to grow */
+  padding: 12px;
+  /* Increase padding for better click area */
+  font-size: 16px;
+  /* Font size */
+  background-color: #F0EFEF;
+  /* Background color for input */
+  border: 1px solid #ccc;
+  /* Default border color */
+  border-radius: 5px;
+  /* Rounded corners */
+  color: #444444;
+  /* Text color */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  /* Smooth transition for focus */
+}
+
+/* Input Focus Style */
+.form-control:focus {
+  outline: none;
+  /* Remove default outline */
+  border-color: #4684E1;
+  /* Change border color on focus */
+  box-shadow: 0 0 5px rgba(70, 132, 225, 0.5);
+  /* Add subtle shadow */
+}
+
+/* Placeholder Style */
+.form-control::placeholder {
+  color: #aaa;
+  /* Light gray for placeholder */
+  opacity: 1;
+  /* Make sure placeholder is fully visible */
+}
+
+/* Input Error Style (Optional) */
+.form-control.error {
+  border-color: red;
+  /* Indicate error with red border */
+}

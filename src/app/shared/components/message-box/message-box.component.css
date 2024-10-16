@@ -12,16 +12,18 @@
     /* Bootstrap primary color */
     color: white;
     /* White text */
-    padding: 5px 10px;
-    /* Smaller padding for a smaller button */
+    padding: 8px 12px;
+    /* Increased padding for a larger button */
     border: none;
     /* Remove default border */
     border-radius: 5px;
     /* Rounded corners */
     cursor: pointer;
     /* Pointer cursor on hover */
-    font-size: 14px;
-    /* Decrease font size */
+    font-size: 16px;
+    /* Increased font size for better visibility */
+    font-weight: bold;
+    /* Make text bold */
     transition: background-color 0.3s, transform 0.2s;
     /* Smooth transitions */
     margin-bottom: 10px;
@@ -46,14 +48,14 @@
 
 /* Set a specific height for the message box and align items to the top */
 .message-box {
-    height: 100%;
-    /* Set the height to fill the remaining space */
+    height: 80%;
+    /* Increased height to occupy more space */
     border-bottom: 1px solid #eee;
     margin-bottom: 10px;
     overflow-y: auto;
     /* Allow scrolling */
-    padding: 10px;
-    /* Add some padding if needed */
+    padding: 15px;
+    /* Increased padding for better spacing */
     display: flex;
     /* Use flexbox for the message box */
     flex-direction: column;
@@ -62,20 +64,37 @@
     /* Align children to the top */
 }
 
+
 /* Message styles remain the same */
 .message {
     background-color: #f5f5f5;
-    padding: 10px;
+    /* Light background for messages */
+    padding: 12px;
+    /* Increased padding for better touch area */
     border-radius: 5px;
-    margin-bottom: 5px;
+    /* Rounded corners */
+    margin-bottom: 10px;
+    /* Increased margin for spacing */
     width: fit-content;
+    /* Fit content width */
+    font-weight: 500;
+    /* Slightly increase font weight */
 }
 
+/* Question style */
 .question {
     background-color: #e6f0ff;
-    padding: 10px;
+    /* Light blue for questions */
+    padding: 12px;
+    /* Increased padding for better touch area */
     border-radius: 5px;
-    margin-bottom: 5px;
+    /* Rounded corners */
+    margin-bottom: 10px;
+    /* Increased margin for spacing */
     width: fit-content;
+    /* Fit content width */
     align-self: flex-end;
+    /* Align to the right */
+    font-weight: 500;
+    /* Slightly increase font weight */
 }

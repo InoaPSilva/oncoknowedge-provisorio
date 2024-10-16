@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-message-sender',
@@ -7,7 +7,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class MessageSenderComponent {
   newMessage: string = '';
-
+  @Input() context: any;
   @Output() messageSent = new EventEmitter<any>();
 
   sendMessage() {
