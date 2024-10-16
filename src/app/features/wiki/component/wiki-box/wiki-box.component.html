@@ -1,9 +1,5 @@
-<section class="info-card">
-    <button class="icon-button">
-        "
-    </button>
-    <div class="text-content">
-        <h1>{{title}}</h1>
-        <span>{{field}}</span>
-    </div>
-</section>
+<div class="box" *ngFor="let cancer of a" (click)="handleClick(cancer.description)">
+    <h2>{{ cancer.title }}</h2>
+    <p>{{ cancer.description }}</p>
+    <p><strong>Mais informações:</strong> {{ cancer.details }}</p>
+</div>

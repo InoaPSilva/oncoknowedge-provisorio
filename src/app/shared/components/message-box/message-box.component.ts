@@ -10,6 +10,10 @@ export class MessageBoxComponent implements OnInit {
 
   constructor() { }
 
+  clean() {
+    this.messages.length = 0;
+  }
+
   ngOnInit(): void {
   }
 

@@ -19,7 +19,8 @@ export class AuthFormComponent implements OnInit {
 
   ngOnInit(): void {
     this.createFormControls();
-
+    console.log(this.formFields);
+    
   }
   createFormControls(): void {
 

@@ -12,6 +12,8 @@ export class MessageSenderComponent {
 
   sendMessage() {
     if (this.newMessage.trim() !== '') {
+
+
       this.messageSent.emit(this.newMessage); // Emitting the message event
       this.newMessage = ''; // Clear the input field
     }
