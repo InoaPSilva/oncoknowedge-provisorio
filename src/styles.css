@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:500,700");
+/* @import url("https://fonts.googleapis.com/css?family=Montserrat:500,700"); */
 
 html,
 body,
@@ -105,8 +105,7 @@ section {
 }
 
 body {
-
-    font-family: 'Montserrat';
+    /* font-family: 'Montserrat'; */
     font-weight: 500;
     line-height: 1;
 }
