@@ -4,6 +4,7 @@ import { MessageBoxComponent } from './components/message-box/message-box.compon
 import { MessageSenderComponent } from './components/message-sender/message-sender.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { MarkdownModule } from 'ngx-markdown';
 
 
 
@@ -16,7 +17,8 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     CommonModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    MarkdownModule.forRoot()  
   ],
   exports: [
     MessageBoxComponent, MessageSenderComponent

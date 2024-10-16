@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ChatService } from '../../shared/service/chat.service';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-wiki',
@@ -21,7 +22,7 @@ export class WikiComponent {
     console.log(message);
 
     this.messages.push({ text: message, type: 'question' });
-    this.chatService.sendQuestion(question, this.contexto, 'fb1b-54e7-4c6a-8c9e-7c7e-2326c5').subscribe((res: any) => {
+    this.chatService.sendQuestion(question).subscribe((res: any) => {
       console.log(res.response);
 
       setTimeout(() => {

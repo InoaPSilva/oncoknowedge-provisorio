@@ -14,7 +14,7 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     FeaturesModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [
     provideClientHydration()
