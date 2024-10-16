@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FeaturesComponent } from './features.component';
 import { AuthModule } from './auth/auth.module';
+import { WikiModule } from './wiki/wiki.module';
+import { SharedModule } from '../shared/shared.module';
 
 
 
@@ -11,7 +13,9 @@ import { AuthModule } from './auth/auth.module';
   ],
   imports: [
     CommonModule,
-    AuthModule
+    AuthModule,
+    WikiModule,
+    SharedModule
   ],
   exports: [FeaturesComponent]
 

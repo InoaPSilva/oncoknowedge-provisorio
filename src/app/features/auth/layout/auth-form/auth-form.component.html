@@ -6,7 +6,7 @@
         <form [formGroup]="form" (ngSubmit)="onSubmit()">
             <!-- Loop through formFields and dynamically create input fields -->
             <div *ngFor="let field of formFields" class="form-group">
-                <input [formControlName]="field" [id]="field" [type]="field === 'password' ? 'password' : 'text'"
+                <input [formControlName]="field" [id]="field" [type]="field === 'senha' ? 'password' : 'text'"
                     [placeholder]="field | titlecase" class="form-control" />
             </div>
 

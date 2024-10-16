@@ -1,15 +1,34 @@
 import { Component, OnInit } from '@angular/core';
+import { ChatService } from '../../shared/service/chat.service';
 
 @Component({
   selector: 'app-wiki',
   templateUrl: './wiki.component.html',
   styleUrls: ['./wiki.component.css']
 })
-export class WikiComponent implements OnInit {
+export class WikiComponent {
+  constructor(private chatService: ChatService) { }
 
-  constructor() { }
+  messages: { text: string, type: string }[] = [];
+  contexto: any = ' ';
 
-  ngOnInit(): void {
+  handleContextReceived(message: any) {
+    this.contexto = message;
   }
 
+  handleMessageSent(message: any) {
+    const question = message;
+    console.log(message);
+
+    this.messages.push({ text: message, type: 'question' });
+    this.chatService.sendQuestion(question, this.contexto, 'fb1b-54e7-4c6a-8c9e-7c7e-2326c5').subscribe((res: any) => {
+      console.log(res.response);
+
+      setTimeout(() => {
+        this.messages.push({ text: res.response, type: 'message' });
+      }, 1000);
+    })
+
+
+  }
 }

@@ -1,0 +1,100 @@
+/* Parent container should take the full height of the viewport */
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    /* Full height of the viewport */
+}
+
+/* Button styles for cleaning messages */
+.clean-button {
+    background-color: #007bff;
+    /* Bootstrap primary color */
+    color: white;
+    /* White text */
+    padding: 8px 12px;
+    /* Increased padding for a larger button */
+    border: none;
+    /* Remove default border */
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    font-size: 16px;
+    /* Increased font size for better visibility */
+    font-weight: bold;
+    /* Make text bold */
+    transition: background-color 0.3s, transform 0.2s;
+    /* Smooth transitions */
+    margin-bottom: 10px;
+    /* Space between button and message box */
+    align-self: flex-start;
+    /* Align to the left */
+}
+
+/* Add hover effect */
+.clean-button:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+    transform: scale(1.05);
+    /* Slightly enlarge button */
+}
+
+/* Add active effect */
+.clean-button:active {
+    transform: scale(0.95);
+    /* Slightly shrink button when clicked */
+}
+
+/* Set a specific height for the message box and align items to the top */
+.message-box {
+    height: 80%;
+    /* Increased height to occupy more space */
+    border-bottom: 1px solid #eee;
+    margin-bottom: 10px;
+    overflow-y: auto;
+    /* Allow scrolling */
+    padding: 15px;
+    /* Increased padding for better spacing */
+    display: flex;
+    /* Use flexbox for the message box */
+    flex-direction: column;
+    /* Align children in a column */
+    justify-content: flex-start;
+    /* Align children to the top */
+}
+
+
+/* Message styles remain the same */
+.message {
+    background-color: #f5f5f5;
+    /* Light background for messages */
+    padding: 12px;
+    /* Increased padding for better touch area */
+    border-radius: 5px;
+    /* Rounded corners */
+    margin-bottom: 10px;
+    /* Increased margin for spacing */
+    width: fit-content;
+    /* Fit content width */
+    font-weight: 500;
+    /* Slightly increase font weight */
+}
+
+/* Question style */
+.question {
+    background-color: #e6f0ff;
+    /* Light blue for questions */
+    padding: 12px;
+    /* Increased padding for better touch area */
+    border-radius: 5px;
+    /* Rounded corners */
+    margin-bottom: 10px;
+    /* Increased margin for spacing */
+    width: fit-content;
+    /* Fit content width */
+    align-self: flex-end;
+    /* Align to the right */
+    font-weight: 500;
+    /* Slightly increase font weight */
+}

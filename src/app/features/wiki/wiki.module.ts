@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { WikiComponent } from './wiki.component';
-import { WikiChatComponent } from './wiki-chat/wiki-chat.component';
 import { WikiBoxComponent } from './component/wiki-box/wiki-box.component';
+import { WikiChatComponent } from './layout/wiki-chat/wiki-chat.component';
+import { NavBarComponent } from '../../core/layout/nav-bar/nav-bar.component';
+import { SharedModule } from '../../shared/shared.module';
 
 
 
@@ -10,10 +12,14 @@ import { WikiBoxComponent } from './component/wiki-box/wiki-box.component';
   declarations: [
     WikiComponent,
     WikiChatComponent,
-    WikiBoxComponent
+    WikiBoxComponent,
+    NavBarComponent,
   ],
   imports: [
-    CommonModule
-  ]
+    CommonModule,
+    SharedModule
+    
+  ],
+  exports: [WikiComponent, WikiChatComponent, WikiBoxComponent, NavBarComponent]
 })
 export class WikiModule { }

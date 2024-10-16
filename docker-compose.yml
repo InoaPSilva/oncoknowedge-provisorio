@@ -1,0 +1,13 @@
+name: 'oncoknowedge'
+services:
+  oncoknowedge:
+    image: oncoknowedge:1.0.0
+    restart: always
+    container_name: oncoknowedge
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: production
+    ports:
+      - 3000:80
